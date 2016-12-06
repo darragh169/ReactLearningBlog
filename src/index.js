@@ -4,7 +4,9 @@ import { render } from 'react-dom';
 
 class BlogEntrance extends React.Component {
 	render(){
-		return <div>Hello</div>
+		return (
+			<h2>Welcome!</h2>
+		)
 	}
 }
 
