@@ -4,7 +4,12 @@ class Navigation extends React.Component {
 	
 	render(){
 		return(
-			<div className="Navigation">Navigation</div>
+			<nav className="Navigation">
+				<a href="#">Test</a>
+				<a href="#">Test</a>
+				<a href="#">Test</a>
+				<a href="#">Test</a>
+			</nav>
 		)
 	}
 	

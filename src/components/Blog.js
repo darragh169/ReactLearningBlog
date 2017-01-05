@@ -4,7 +4,12 @@ class Blog extends React.Component {
 	
 	render(){
 		return(
-			<div className="Blog">Blog</div>
+			<section className="Blog">
+				<h5>Title</h5>
+				<article>
+					<p>test test test test</p>
+				</article>
+			</section>
 		)
 	}
 	
