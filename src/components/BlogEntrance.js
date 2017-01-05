@@ -2,7 +2,12 @@ import React from 'react';
 
 class BlogEntrance extends React.Component {
 	render(){
-		return <div>Hello</div>
+		return (
+			<form action="" className="BlogEntrance">
+				<h2>Blog Title</h2>
+				<button type="submit">Enter</button>
+			</form>
+		)
 	}
 }
 
