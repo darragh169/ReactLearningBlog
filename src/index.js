@@ -5,5 +5,6 @@ import { render } from 'react-dom';
 import './css/style.css';
 
 import BlogEntrance from './components/BlogEntrance';
+import App from './components/App';
 
-render(<BlogEntrance />, document.getElementById('main'));
+render(<App />, document.getElementById('main'));
