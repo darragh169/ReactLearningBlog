@@ -1,15 +1,12 @@
 import React from 'react';
 
-class Footer extends React.Component {
-	
-	render(){
-		return(
-			<footer className="Footer">
-				<small>Darraghs Blog</small>
-			</footer>
-		)
-	}
-	
+const Footer = (props) => {
+	return(
+		<footer className="Footer">
+			<small>{props.text}</small>
+		</footer>
+	)
 }
+	
 
 export default Footer;

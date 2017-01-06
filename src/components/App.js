@@ -13,7 +13,7 @@ class App extends React.Component {
 				<Header message="Hello"></Header>
 				<Navigation></Navigation>
 				<Blog></Blog>
-				<Footer></Footer>
+				<Footer text="Footer"></Footer>
 			</div>
 		)
 	}
