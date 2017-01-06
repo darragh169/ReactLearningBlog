@@ -77,8 +77,15 @@ h1, h3, h4, h5, p {
 /**************************************************************/
 
 .main{
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 960px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: 960px;
+}
+.button{
+	border: solid 2px #FF5733;
+	cursor: pointer;	
+}
+.blogList li{
+	margin: 20px;
 }
