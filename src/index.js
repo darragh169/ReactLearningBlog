@@ -1,13 +1,23 @@
 //index.js
 import React from 'react';
 import { render } from 'react-dom';
+import { BrowserRouter, Match, Miss } from 'react-router';
 
-class BlogEntrance extends React.Component {
-	render(){
-		return (
-			<h2>I hate this job, so very much!</h2>
-		)
-	}
+import './css/style.css';
+
+import BlogEntrance from './components/BlogEntrance';
+import App from './components/App';
+import NotFound from './components/NotFound';
+
+const Root = () => {
+	return(
+		<BrowserRouter>
+			<div>
+				<Match exactly pattern="/" component={App}></Match>
+				<Miss component={NotFound}></Miss>
+			</div>
+		</BrowserRouter>
+	)
 }
 
-render(<BlogEntrance />, document.getElementById('main'));
+render(<Root />, document.getElementById('main'));
