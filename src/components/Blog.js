@@ -1,4 +1,5 @@
 import React from 'react';
+import { getRandomDay } from '../Utilities'
 
 class Blog extends React.Component {
 	
@@ -8,6 +9,7 @@ class Blog extends React.Component {
 				<h5>Title</h5>
 				<article>
 					<p>test test test test</p>
+					<p>A Random day of the week is { getRandomDay() }</p>
 				</article>
 			</section>
 		)
