@@ -3,11 +3,14 @@ import React from 'react';
 class BlogPost extends React.Component {
 	
 	render(){
+
+		const { details } = this.props;
+
 		return(
-			<h1>This will be an individual Post Page</h1>
+			<li id={details.id}>{details.blogText}</li>
 		)
 	}
 	
 }
 
-export default Blog;
+export default BlogPost;
