@@ -16,7 +16,7 @@ class App extends React.Component {
 		this.loadPosts = this.loadPosts.bind(this);
 
 		this.state = {
-			posts : {},
+			posts : sampleData,
 			order : {}
 		};
 	}
@@ -29,8 +29,9 @@ class App extends React.Component {
 	}
 
 	loadPosts() {
+		const posts = Object.assign({...this.state.posts}, sampleData);
 		this.setState({
-			posts : sampleData
+			posts : posts
 		});
 	}
 

@@ -6,10 +6,8 @@ class NewPostForm extends React.Component {
 
 		event.preventDefault();
 
-		console.log('createBlogPost');
-
 		const post ={
-			blogText: this.blogText
+			blogText: this.blogText.value
 		}
 
 		this.props.addPost(post);
