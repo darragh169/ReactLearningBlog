@@ -5,6 +5,8 @@ import Navigation from './Navigation';
 import Blog from './Blog';
 import Footer from './Footer';
 
+import base from '../base'
+
 import sampleData from '../sampleData';
 
 class App extends React.Component {
@@ -16,9 +18,17 @@ class App extends React.Component {
 		this.loadPosts = this.loadPosts.bind(this);
 
 		this.state = {
-			posts : sampleData,
+			posts : {},
 			order : {}
 		};
+	}
+
+	componentWillMount(){
+		this.ref = base.syncState(`/test/posts`,{ context: this, state: 'posts'});
+	}
+
+	componentWillUnMount(){
+		base.removeBinding(this.ref);
 	}
 
 	addPost(post){

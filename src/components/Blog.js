@@ -24,7 +24,7 @@ class Blog extends React.Component {
 					{
 							Object
 								.keys(this.props.posts)
-								.map(key => <BlogPost key={key} details={this.props.posts[key]}/>)
+								.map(key => <BlogPost key={key} index={key} details={this.props.posts[key]}/>)
 					}
 					</ul>
 				</section>

@@ -4,10 +4,10 @@ class BlogPost extends React.Component {
 	
 	render(){
 
-		const { details } = this.props;
+		const { details , index } = this.props;
 
 		return(
-			<li id={details.id}>{details.blogText}</li>
+			<li id={index}>{details.blogText}</li>
 		)
 	}
 	
